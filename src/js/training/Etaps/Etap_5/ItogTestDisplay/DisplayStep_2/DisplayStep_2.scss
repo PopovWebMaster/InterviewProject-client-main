@@ -1,0 +1,32 @@
+.displayStep_2{
+    font-size: 1em;
+
+    position: absolute;
+    top: center;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; // flex-start flex-end center space-between space-around space-evenly
+    align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+    align-items: center;//stretch flex-start flex-end center baseline
+
+    background-color: #f8f8f8;
+
+    span{
+        padding: 1.2em;
+        font-size: 1.6em;
+        text-align: center;
+        font-family: 'Kurale', serif;
+
+    }
+
+}

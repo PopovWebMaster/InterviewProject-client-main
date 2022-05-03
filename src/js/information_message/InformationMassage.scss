@@ -1,0 +1,56 @@
+.informationMassage{
+    font-size: 1em;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+
+    height: 100%;
+	background-color: #aacc5330;
+    position: relative;
+    
+    padding: 0.4em 0;
+
+
+    >h2{
+        margin: 0.4em 1.5em;
+
+        font-size: 1.1em;
+        font-family: 'El Messiri', sans-serif;
+        line-height: 1.8em;
+        text-align: center;
+
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    >p{
+        margin: 0.4em 1.5em;
+        font-size: 1em;
+        font-family: 'El Messiri', sans-serif;
+        line-height: 1.6em;
+        text-align: justify;
+        text-indent: 2em;
+    }
+
+    a{
+        font-size: 1em;
+        font-family: 'El Messiri', sans-serif;
+        line-height: 1.6em;
+        color: #3b6cfe;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #002db4;
+    }
+    a:active{
+        color: #7396ff;
+    }
+}
+
+@media screen and (min-width: 10px) and (max-width: 420px) {
+    .informationMassage{
+        font-size: 0.8em;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+}

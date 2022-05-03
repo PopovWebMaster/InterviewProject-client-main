@@ -1,0 +1,64 @@
+.formButton{
+
+    
+
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    margin: 1.5em auto ;
+    border-radius: 0.3em; // 
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: background-color 0.1s linear;
+    -moz-transition: background-color 0.1s linear;
+    -o-transition: background-color 0.1s linear;
+    transition: background-color 0.1s linear; 
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1em;
+    line-height: 1.65em;
+    color: #fff;
+    border: 1px solid rgb( 33, 126, 74 );	
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+    background-color: rgb( 43, 153, 91 );
+
+    cursor: pointer;
+
+    >span{
+        line-height: 1.65rem;
+    }
+
+}
+
+.formButton:active {
+    border: 1px solid rgb(16, 73, 41);	
+}
+
+.formButton:hover {
+    background-color: rgb( 75, 183, 141 );
+}
+
+.formButton:focus {
+    outline: none;
+}
+
+
+// .formButton.noActiveSubmit{
+   
+//     cursor: default;
+//     opacity: 0.5;
+
+// }
+
+// .formButton.noActiveSubmit:active {
+//     border: 1px solid rgb( 33, 126, 74 );		
+// }
+
+// .formButton.noActiveSubmit:hover {
+//     background-color: rgb( 43, 153, 91 );
+// }
+
+// .formButton.noActiveSubmit:focus {
+//     border: 1px solid rgb( 33, 126, 74 );
+// }

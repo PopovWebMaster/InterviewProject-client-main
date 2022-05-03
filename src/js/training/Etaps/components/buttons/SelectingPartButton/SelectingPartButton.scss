@@ -1,0 +1,87 @@
+.butSerclePart{
+
+    font-size: 1em;
+
+	margin: 2em 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: space-evenly;
+    
+    .nextPart{
+        font-size: 2em;
+        line-height: 1em;
+        color: #7e80ef;
+        width: 6em;
+        border: 1px solid #00000000;
+        border-radius: 0.3em;
+        text-align: center;
+        cursor: pointer;
+
+        span{
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 2em;
+        }
+
+    }
+
+    .nextPart:active{
+        background-color: #dddddd;
+    }
+
+    .nextPart:hover{
+        border: 1px solid #0101013d;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center; // flex-start flex-end center space-between space-around space-evenly
+        align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+        align-items: center;//stretch flex-start flex-end center baseline
+
+        li{
+            width: 1.8em;
+            height: 1.8em;
+            border-radius: 50%;
+            background-color: #5a86b4;
+            margin: 1em 1.8em;
+            cursor: pointer;
+            color: #00000000;
+            font-size: 0.5rem;
+            text-align: center;
+            line-height: 1.8em;
+            opacity: 0.2;
+            transition: opacity 0.3s linear;
+        }
+
+        li.op1{
+            background-color: #5a86b4;
+            opacity: 1;
+        }
+    }
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 460px) {
+	.butSerclePart{
+        .nextPart{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 280px) {
+	.butSerclePart{
+        ul{
+            li{
+                width: 1.5em;
+                height: 1.5em;
+                margin: 0.6em 1.5em;
+            }
+        }
+    }
+}

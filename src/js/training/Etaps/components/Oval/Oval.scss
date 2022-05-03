@@ -1,0 +1,196 @@
+#oval{
+	position: relative;
+
+	font-size: 12px;
+
+	width: 30em; 
+	height: 10em; 
+	position: relative;
+	display: block;
+	background-color: #f8f8f8;
+    margin: 0 auto;
+    
+    border: 0.2em solid #e6e6f800;
+	border-radius: 6em; 
+
+	// overflow: hidden;
+
+	>div{
+		font-size: 1em;
+	}
+
+	.dinamic_location{
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center; // flex-start flex-end center space-between space-around space-evenly
+		align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+		align-items: center;//stretch flex-start flex-end center baseline
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 30%;
+		height: 100%;
+
+		border: 0.2em solid #e6e6f800;
+		
+		opacity: 1;
+		transition: opacity 0.2s;
+		//transition-delay: 0.2s;
+
+		z-index: 200;
+	}
+
+
+	.answer_location{
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		border: 0.2em solid #e6e6f8;
+		border-radius: 6em; 
+
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+
+
+
+		div.answer{
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 100;
+			background-color: #ffffff;
+			width: 70%;
+			border-radius: 12em; 
+			height: 100%;
+			overflow: hidden;
+			transition: width 0.2s ease-out;
+
+			cursor: pointer;
+			user-select: none;
+
+			div{
+				position: absolute;
+				top: 0;
+				right: 0;
+
+				width: calc(100% - 1.5em); 
+				height: calc(100% - 1.5em); 
+
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-content: center;
+				align-items: center;
+				
+				text-align: center;
+				font-family: 'Kurale', serif;
+				padding: 0.8em 0.8em 0.7em 0.7em;
+				border-radius: 8em;
+			}
+
+
+			div.answer_ru{
+				font-size: 1.4em;
+				line-height: 1.4em;
+
+				color: #767070;
+				opacity: 0;
+			}
+
+			div.answer_title{
+				font-size: 1.8em;
+				line-height: 1.8em;
+				font-family: 'Marck Script', cursive;
+				color: #a39696;
+				opacity: 1;
+				transition: opacity 0.2s;
+			}
+
+			div.answer_title:hover{
+				color: #7e80ef;
+			}
+		}
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+	
+}
+
+@media screen and (min-width: 970px) and (max-width: 1090px) {
+    #oval{
+		font-size: 11px;
+	}
+}
+
+@media screen and (min-width: 680px) and (max-width: 970px) {
+    #oval{
+		font-size: 10px;
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 680px) {
+    #oval{
+		font-size: 9px;
+	}
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    #oval{
+		font-size: 8px;
+	}
+}
+@media screen and (min-width: 240px) and (max-width: 360px) {
+    #oval{
+		font-size: 7px;
+	}
+}
+@media screen and (min-width: 10px) and (max-width: 240px) {
+    #oval{
+		font-size: 5px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*СООБЩЕНИЕ ПО ОКОНЧАНИИ СПРАШИВАТЕЛЯ В 3 ЭТАПЕ*/
+// #massage_in_dinamic_and_answer{
+// 	width: 100%;
+// 	height: 100%;
+
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: center;
+// 	align-content: center;
+// 	align-items: center;
+// }
+// #massage_in_dinamic_and_answer span{
+// 	color: #767070;
+// 	font-size: 15px;
+// 	text-align: center;
+// 	font-family: 'Kurale', serif;
+// }

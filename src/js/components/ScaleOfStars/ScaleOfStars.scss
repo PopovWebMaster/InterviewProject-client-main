@@ -1,0 +1,35 @@
+ul.scaleOfStars{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly; // flex-start flex-end center space-between space-around space-evenly
+    align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+    align-items: center;//stretch flex-start flex-end center baseline
+    margin: 0 auto;
+    padding: 0.1em 0.2em;
+
+    li{
+        font-family: 'Marmelad', sans-serif;
+        color: #e3e2e2ed;
+        font-size: 1.2em;
+    }
+    li.light{
+        color: #eef316;
+    }
+}
+
+@media screen and (min-width: 340px) and (max-width: 460px) {
+	ul.scaleOfStars{
+        li{
+            font-size: 1em;
+        }
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 340px) {
+	ul.scaleOfStars{
+        li{
+            font-size: 0.8em;
+        }
+    }
+}

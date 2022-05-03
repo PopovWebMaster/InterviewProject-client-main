@@ -1,0 +1,179 @@
+.inputWithButton{
+    width: 100%;
+    font-size: 1em;
+
+    .wrap{
+        width: auto;
+        margin: 0 auto;
+        position: relative;
+
+        .borderWrap{
+            font-size: 1em;
+
+            width: auto;
+            height: 4em;
+
+            margin: 0 auto;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center; // flex-start flex-end center space-between space-around space-evenly
+            align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+            align-items: center;//stretch flex-start flex-end center baseline
+
+            overflow: hidden;
+
+            >input{
+                width: 0px;
+                height: 100%;
+
+                margin-right: 0px;
+
+                font-size: 1.6em;
+                font-family: 'Molengo', sans-serif;
+                color: #504d4d;
+                text-align: center;
+
+                border: 1px solid #ccc;
+                border-radius: 0.2em 0 0 0.2em;
+
+                outline: none;
+                box-sizing:border-box;
+                
+                z-index: 100;
+
+            }
+
+            >input.open{
+                width: calc( 80% + 2.2em );
+                border-radius: 0.2em;
+                margin-right: calc( -2.2em + -7px );
+                opacity: 1;
+                padding: 0 2.5em;
+            }
+
+            @media screen and (min-width: 10px) and (max-width: 520px) {
+                >input.open{
+                    width: calc( 100% + 2.2em );
+                    margin-right: calc( -2.2em + -7px );
+                    text-align: left;
+                    text-indent: 1em;
+                    padding: 0;
+                    opacity: 1;
+                }
+            }
+
+            >input.close{
+                width: 0px;
+                opacity: 0;
+            }
+
+            >div{
+                height: 100%;
+
+                margin-left: 0px;
+                height: 2em;
+                box-sizing:border-box;
+
+                font-size: 2em;
+                font-family: 'Molengo', sans-serif;
+
+                text-align: center;
+
+                color: #fff;
+
+                background-color: #2b995b;
+                border: 1px solid rgb( 33, 126, 74 );
+                -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+                -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);	
+
+                z-index: 200;
+                cursor: pointer;
+                user-select: none;
+
+                span{
+                    font-size: 0.7em;
+                    line-height: 2.7em;
+                    height: 100%;
+                }
+
+                span.enter{
+                    font-size: 1.1em;
+                    line-height: 1.7em;
+                }
+
+                span.enter:before{
+                    content: "\21B5";
+                }
+            }
+
+            >div.start{
+                width: 9em;
+                border-radius: 0.2em;
+            }
+
+            >div.training{
+                width: 2.2em;
+                border-radius: 0 0.2em 0.2em 0;
+            }
+
+            >div.hover,
+            >div:hover{
+                background-color: #85cfa5;
+            }
+
+            >div:active{
+                color: #eef343;
+            }
+
+        }
+
+        .errorMassage{
+            width: calc( 80% - 4.5em);
+
+            position: relative;
+            margin: 0 auto;
+            padding-top: 0.2em;
+            padding-right: 4.5em;
+
+            font-size: 1.2em;
+            font-family: 'Marmelad',sans-serif;
+            color: red;
+            text-align: center;
+            line-height: 1.2em;
+
+            span{
+                position: absolute;
+                left: 0px;
+                width: 100%;
+            }
+
+            span.open{
+                top: 0px;
+                opacity: 1;
+                transition: top 0.5s ease, opacity 0.5s ease;
+            }
+
+            span.hide{
+                top: -3em;
+                opacity: 0;
+                transition: top 0.5s ease, opacity 0.5s ease;
+            }
+
+            span.hideWithOutAnimation{
+                top: -3em;
+                opacity: 0;
+                transition: top 0s ease, opacity 0s ease;
+            }
+
+        }
+
+        @media screen and (min-width: 10px) and (max-width: 520px) {
+            .errorMassage{
+                width: calc( 100% - 4.5em);
+            }  
+        }
+    }
+}

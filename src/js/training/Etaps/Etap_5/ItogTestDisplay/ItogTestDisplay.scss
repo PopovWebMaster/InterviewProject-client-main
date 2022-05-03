@@ -1,0 +1,20 @@
+.itogTestDisplay{
+    font-size: 1em;
+
+    position: relative;
+
+    height: 13em;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center; // flex-start flex-end center space-between space-around space-evenly
+    align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+    align-items: center;//stretch flex-start flex-end center baseline
+
+
+    opacity: 1;
+    transition:  opacity 0.5s ease;
+
+
+}

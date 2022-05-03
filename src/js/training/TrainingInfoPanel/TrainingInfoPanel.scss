@@ -1,0 +1,117 @@
+.trainingInfoPanel{
+    width: 100%;
+
+    .trainingWrap{
+        width: 100%;
+        padding: 0 0 1em 0;
+        font-size: 14px;
+        user-select: none;
+
+        display: flex;
+        flex-direction: row;
+        //flex-wrap: nowrap;
+        justify-content: space-between; // flex-start flex-end center space-between space-around space-evenly
+        align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+        align-items: center;//stretch flex-start flex-end center baseline
+
+        .trainingInfo{
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start; // flex-start flex-end center space-between space-around space-evenly
+            align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+            align-items: center;//stretch flex-start flex-end center baseline
+
+            width: 6em;
+            padding: 0 1.5em;
+            .trainingImg{
+                img{
+                    width: 3em;
+                    height: 3em;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            .trainingQueue{
+                font-family: 'Marmelad', sans-serif;
+                color: #a76060;
+                font-size: 1.2em;
+                padding-left: 1.1em;
+                text-align: right;
+            } 
+
+        }
+
+        .trainingInfoResult{
+            padding: 0 1.5em;
+
+            table{
+                tbody{
+                    tr{
+                        th{
+                            font-family: Marmelad,sans-serif;
+                            font-size: .9em;
+                            padding: 0 1em;
+                            color: #202020;
+                            text-align: right;
+                            
+                        }
+                    }
+                }
+            }
+        }
+ 
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 460px) {
+	.trainingInfoPanel{
+        .trainingWrap{
+            font-size: 11px;
+        }
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 360px) {
+	.trainingInfoPanel{
+        .trainingWrap{
+            .trainingInfo{
+                padding: 0 0.5em;
+            }
+            .trainingInfoResult{
+                padding: 0 0.5em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 310px) {
+	.trainingInfoPanel{
+        .trainingWrap{
+            flex-direction: column;
+            align-items: flex-start;
+            >div{
+                width: 100%;
+            }
+            .trainingInfoResult{
+                table{
+                   display: block;
+                    width: auto;
+                    float: right; 
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+.radioButtons{
+
+    ul{
+        list-style-type: none;
+	
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around; // flex-start flex-end center space-between space-around space-evenly
+        align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+        align-items: center;//stretch flex-start flex-end center baseline
+
+        li{
+            font-size: 1.4em;
+            line-height: 1em;
+
+            border-radius: 0.3em;
+            background-color: rgba( 43, 153, 91, 0);
+            border: 1px solid rgb(164, 206, 149);
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+            -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+
+            color: #009300;
+
+            width: 7em;
+            text-align: center;
+
+            padding: 0.6em 0;
+	        margin: 1em 2em;
+            text-decoration: none;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+            -webkit-transition: background-color 0.1s linear;
+            -moz-transition: background-color 0.1s linear;
+            -o-transition: background-color 0.1s linear;
+            transition: background-color 0.1s linear;
+
+            user-select: none;
+	        cursor: pointer;
+
+            span{
+                display: block;
+                font-family: 'Kurale', serif;
+                width: 100%;
+                padding: 0px 0px;
+            }
+        }
+
+        li:hover {
+            background-color: rgba(163, 150, 150, 0.16);
+        }
+
+        li:active{
+            color: #f9aeae;
+        }
+
+        li.activeStyle{
+            background-color: rgb(174, 216, 159);
+            border: 1px solid rgb(138, 174, 125);
+            color: #ffffff;
+        }
+
+        li.activeStyle:hover{
+            background-color: rgb(166, 202, 153);
+            border: 1px solid rgb(164, 164, 164);
+            color: #ffffff;
+        }
+
+        li.activeStyle:active{
+            color: #f9aeae;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 10px) and (max-width: 640px) {
+    .radioButtons{
+        width: 100%;
+        ul{
+            li{
+                margin: 0.5em 0.5em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 10px) and (max-width: 380px) {
+    .radioButtons{
+        ul{
+            li{
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,43 @@
+#hotkeyPanel{
+
+    font-size: 1em;
+
+    width: 100%;
+    margin: 1em 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start; // flex-start flex-end center space-between space-around space-evenly
+    align-content: flex-start;//stretch flex-start flex-end center space-between space-around space-evenly
+    align-items: flex-start;//stretch flex-start flex-end center baseline
+
+    >div{
+
+        width: auto;
+        text-align: left;
+        font-size: 1.5em;
+        font-family: 'Marck Script', cursive;
+        user-select: none;
+
+        span.hotKeyTitle{
+            color: #727279;
+        }
+
+        span.hotKeyValue{
+            padding: 0.2em 0.5em;
+            background-color: #03030315;
+            border-radius: 0.4em;
+            color: #333222;
+            cursor: pointer;
+        }
+        span.hotKeyValue:hover{
+            background-color: #03030320;
+        }
+
+        span.hotKeyValue:active{
+            color: red;
+        }
+    }
+
+}

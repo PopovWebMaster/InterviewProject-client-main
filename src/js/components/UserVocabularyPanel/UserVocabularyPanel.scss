@@ -1,0 +1,27 @@
+#yourVocabulary {
+    padding: 10px 0;
+	font-size: 16px;
+    font-family: 'Marck Script', cursive;
+    text-indent: 1.5em;
+	/*font-family: 'Architects Daughter', cursive;*/
+	/*font-family: 'Kurale', serif;*/
+    color: #a39696;
+    user-select: none;
+}
+
+#yourVocabulary .sumVoc{
+	font-size: 1.1em;
+	color: #000000;
+}
+
+@media screen and (min-width: 100px) and (max-width: 460px) {
+	
+	#yourVocabulary {
+        font-size: 13px;
+    }
+    
+    #yourVocabulary .sumVoc{
+        font-size: 14px;
+    }
+	
+}

@@ -1,0 +1,14 @@
+div.hotKey{
+
+    font-size: 1.6em;
+    font-family: 'Kurale', serif;
+    color: #00000033;
+    text-align: center;
+    width: 100%;
+    margin: 0.3em 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+
+    user-select: none;
+
+}

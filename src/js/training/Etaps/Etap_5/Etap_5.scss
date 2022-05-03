@@ -1,0 +1,22 @@
+.itogTest{
+
+    font-size: 1em;
+
+    .itogDisplayCurtain{
+        height: 0;
+        overflow: hidden;
+
+        z-index: 100;
+    }
+
+    .itogDisplayCurtain.showDisplay{
+        opacity: 1;
+        z-index: 100;
+    }
+
+    .itogDisplayCurtain.hideDisplay{
+        opacity: 0;
+        z-index: 100;
+    }
+
+}

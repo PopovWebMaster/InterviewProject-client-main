@@ -1,0 +1,59 @@
+.body_auth {
+	font-size: 1em; 
+
+	max-width: 960px;
+	width: 82vw;
+	margin: 0 auto; // 3.2em auto 0
+
+
+	.body_auth_wrap {
+		display: block;
+		font-family: 'El Messiri', sans-serif;
+		text-align: right;
+		margin: 0.7em;
+
+		.body_auth_us_name{
+			margin-right: 0em;
+		}
+
+		.body_auth_icon{
+			margin: 0 0.3em 0 0.15em;
+		}
+
+		.body_auth_button {
+			font-size: 0.9em;
+			margin-left: 0.2em;
+			color: #32394a;
+			cursor: pointer;
+			text-decoration: underline;
+		}
+
+		.body_auth_button:active {
+			color: #32394a;
+			//text-decoration: none;
+		}
+
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 10px) and (max-width: 768px){
+	.body_auth {
+		.body_auth_wrap {
+			display: none;
+		}	
+	}
+
+
+	
+}

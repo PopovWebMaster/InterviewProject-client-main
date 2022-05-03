@@ -1,0 +1,62 @@
+.displayStep_1{
+    font-size: 1em;
+
+    position: absolute;
+    top: center;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center; // flex-start flex-end center space-between space-around space-evenly
+    align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+    align-items: center;//stretch flex-start flex-end center baseline
+
+    .testDinamicLocation{
+        width: 30%;
+        font-size: 1.3em;
+    }
+
+    .testRepeat{
+        width: 12em;
+        font-family: 'Kurale', serif;
+        text-align: center;
+        font-size: 1.3em;
+        padding: 0.5em 0.8em;
+        color: rgb(120, 106, 106);
+
+        background-color: #f8f8f8;
+        border: 1px solid #e6e6f8;
+        border-radius: 0.4em;
+        box-sizing: border-box;
+        opacity: 1;
+
+        user-select: none;
+        cursor: pointer;
+
+        span{
+            font-size: 1.3em;
+            line-height: 1.6em;
+        }
+
+    }
+
+    .testRepeat.hover,
+    .testRepeat:hover{
+        background-color: #a39696;
+        border: 1px solid #e6e6f8;
+        color: #f8f8f8;
+    }
+
+    .testRepeat:active{
+        color: #f6a8a8;
+    }
+}
+

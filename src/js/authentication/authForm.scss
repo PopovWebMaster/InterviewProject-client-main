@@ -1,0 +1,92 @@
+.authForm{
+    font-size: 1em;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+
+    height: 100%;
+	background-color: #aacc5330;
+    position: relative;
+    
+    padding: 1.4em 0;
+
+    .formName{
+        font-size: 1em;
+        font-family: 'El Messiri', sans-serif;
+        text-align: center;
+    }
+
+    .massageConfirmed{
+        font-size: 0.9em;
+        line-height: 1.4em;
+        width: 100%;
+    
+        font-family: El Messiri,sans-serif;
+    
+        text-align: center;
+    
+        color: #3d34b6 ;//#695efd
+        padding: 1em 0;
+        margin: 1em 0;
+    
+        background-color: #bab6ff;
+    
+        p{
+            padding: 0 1em;
+    
+            span{
+                color: rgb(58, 58, 185);
+            }
+            span:hover{
+                color: blue;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            span:active{
+                color: red;
+            }
+        }
+    
+    }
+
+    form{
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+
+
+
+
+        .formLink{
+            font-size: 0.9em;
+            font-family: 'El Messiri', sans-serif;
+            text-align: right;
+            margin-top: -0.5em;
+
+            a{
+                display: block;
+                width: 88%;
+                margin: 0.3em auto;
+                color: #1404ff;
+            }
+            a:hover{
+                color: #695efd;
+            }
+            a:active{
+                color: #ff0404;
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 10px) and (max-width: 420px) {
+    .authForm{
+        font-size: 0.9em;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+}

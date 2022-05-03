@@ -1,0 +1,82 @@
+.textTrainingDisplay{
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    height: 0px;
+
+    font-size: 1em;
+    opacity: 0;
+
+    .requestedWord{
+        width: 80%;
+        margin: 0 auto;
+        height: 9em;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center; // flex-start flex-end center space-between space-around space-evenly
+        align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+        align-items: center;//stretch flex-start flex-end center baseline
+
+        background-color: #f8f8f8;
+
+        user-select: none;
+
+        span{
+            font-size: 1.5em;
+            text-align: center;
+	        font-family: 'Kurale', serif;
+        }
+
+    }
+
+    .resultList{
+        width: 84%;
+        margin: 0 auto;
+        position: relative;
+
+        font-size: 1em;
+        opacity: 0;
+
+        ul{
+            width: 100%;
+
+            li{
+                width: 100%;
+                height: 1.5em;
+                color: #ababab;
+                text-align: center;
+                line-height: 1.5em;
+                font-size: 1.5em;
+                font-family: 'Molengo', sans-serif;
+                opacity: 1;
+
+                overflow: hidden;
+
+                span.ok_hidden{
+                    opacity: 0;
+                }
+
+                span.icon-ok-1{
+                    padding-left: 5px;
+                    color: green;
+                }
+
+                span.e_4_red{
+                    color: red;
+                }
+                span.correctLetterWithError{
+                    color: #838383;
+                }
+
+               
+
+            }
+
+        }
+    }
+
+
+
+}

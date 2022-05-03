@@ -1,0 +1,76 @@
+.treningButton{
+
+    width: 100%;
+    font-size: 1.1em;
+    font-family: 'Kurale', serif;
+    text-align: center;
+    line-height: 2em;
+
+    .treningButton_child{
+        font-size: 1.3em;
+        width: 100%;
+        padding: 0.5em 0.8em;
+        color: rgb(120, 106, 106);
+
+        background-color: #f8f8f8;
+        border: 1px solid #e6e6f8;
+        border-radius: 0.4em;
+        box-sizing: border-box;
+        opacity: 1;
+
+        user-select: none;
+        cursor: pointer;
+  
+    }
+    .treningButton_child.hover,
+    .treningButton_child:hover{
+        background-color: #a39696;
+        border: 1px solid #e6e6f8;
+        color: #f8f8f8;
+    }
+
+    .treningButton_child:active{
+        color: #f6a8a8;
+    }
+
+    .treningButton_child.noActive{
+
+        background-color: #f8f8f8;
+        border: 1px solid #e6e6f8;
+        color: rgb(120, 106, 106);
+
+        cursor: default;
+
+        opacity: 0.4;
+
+    }
+
+    .treningButton_child.noActive:hover{
+        background-color: #f8f8f8;
+        border: 1px solid #e6e6f8;
+        color: rgb(120, 106, 106);
+    }
+
+    .treningButton_child.noActive:active{
+        color: rgb(120, 106, 106);
+    }
+
+
+
+
+
+
+
+
+
+}
+@media screen and (min-width: 10px) and (max-width: 520px) {
+	.treningButton{
+        .treningButton_child{
+            span:first-child{
+                display: none;
+            }
+        }
+	}
+}
+

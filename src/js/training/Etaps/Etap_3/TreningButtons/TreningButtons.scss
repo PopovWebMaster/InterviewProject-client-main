@@ -1,0 +1,31 @@
+#treningButtons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; // flex-start flex-end center space-between space-around space-evenly
+    align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+    align-items: center;//stretch flex-start flex-end center baseline
+
+    >div{
+        max-width: 15em;
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 10px) and (max-width: 520px) {
+	#treningButtons{
+		>div{
+            max-width: 20%;
+        }
+	}
+}
+
+
+
+
+
+
+
+
+

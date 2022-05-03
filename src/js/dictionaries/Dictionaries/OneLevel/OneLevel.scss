@@ -1,0 +1,199 @@
+.oneLevel{
+    padding: 1em 0;
+    font-size: 14px;
+    user-select: none;
+
+    .levelHead {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around; // flex-start flex-end center space-between space-around space-evenly
+        align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+        align-items: center;//stretch flex-start flex-end center baseline
+
+        border-bottom: 1px solid #f9c242;
+        padding: 0.7em 0.1em;
+        
+        .levelName{
+            flex-grow: 0;
+            font-size: 1.2em;
+            line-height: 1.6em;
+            font-family: 'El Messiri', sans-serif;
+            color: #ffffff;
+            background-color: #f9c242;
+            border-radius: 8px;
+            padding: 0px 0.8em;
+
+        }
+        .levelSumWords{
+            flex-grow: 1;
+            padding: 0 0.8em;
+            font-size: 1.2em;
+            font-family: 'Marck Script', cursive;
+            color: #868686;
+        }
+    }
+
+    >ul{
+        margin-top: 1.3em;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between; // flex-start flex-end center space-between space-around space-evenly
+        align-content: center;//stretch flex-start flex-end center space-between space-around space-evenly
+        align-items: center;//stretch flex-start flex-end center baseline
+
+        li{
+            flex-grow: 0;
+            width: auto;
+
+            a{
+                width: 90%;
+                height: 90%;
+                text-decoration: none;
+                padding: 1em 0;
+                display: block;
+                margin: 0 auto;
+                
+                .levelQueue{
+                    text-align: right;
+                    font-family: 'Marmelad', sans-serif;
+                    color: #a76060;
+                    padding-right: 1em;
+                    font-size: 1.2em;
+
+                }
+                .levelImg{
+                    width: 100%;
+                    height: auto;
+
+                    img{
+                        width: 50%;
+                        height: 50%;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+                .levelSumWords{
+                    font-family: 'Marmelad', sans-serif;
+                    color: #a76060;
+                    padding-left: 1em;
+                    font-size: 1.0em;
+                }
+            }
+            a:hover{
+                background-color: hsla(0, 0%, 91%, 0.38);
+            }
+        }
+    }
+
+    >div.levelResults_but{
+        width: 100%;
+        padding: 0.5em 0.6em;
+
+        span{
+            font-family: 'Marmelad', sans-serif;
+            font-size: 1em;
+            padding: 0.5em 0.6em;
+            width: auto;
+
+            color: #0072f5;
+            user-select: none;
+        }
+        span:hover{
+            text-decoration: underline;
+            color: #0072f5;
+            cursor: pointer;
+        }
+
+    }
+
+    table{
+        font-size: 1em;
+    }
+
+    table.levelResults{
+        border-collapse: separate; 
+        border-spacing: 0.3em;
+        table-layout: fixed;
+        width: 100%;
+        margin: 0 auto;
+
+        tr{
+            
+            th{
+                font-family: 'Marmelad', sans-serif;
+                font-size: 0.9em;
+                padding: 0.2em 0.3em;
+                color: #000000;
+                text-align: center;
+                background-color: #00000005;
+
+                span{
+                    color: #5fdf09;
+                }
+
+            }
+
+            th.th_head{
+                font-family: 'Marmelad', sans-serif;
+                font-size: 1em;
+                color: #000000;
+                text-align: center;
+                background-color: #00000015;
+            }
+            th.levelRemnant{
+                color: red;
+            }
+        }
+        
+    }
+
+    table.levelResultInfo{
+        border-collapse: separate; 
+        border-spacing: 0.2em;
+        width: auto;
+        margin-top: 1em;
+        float: right;
+        tbody{
+
+            tr{
+                th{
+                    font-family: 'Marmelad', sans-serif;
+                    font-size: 0.9em;
+                    padding: 0 0.1em;
+                    color: #202020;
+                    user-select: none;
+                }
+                th:first-child{
+                    text-align: right;
+                }
+                th:last-child{
+                    text-indent: 0.8em;
+                    text-align: center;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (min-width: 640px) and (max-width: 870px) {
+	.oneLevel{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 460px) and (max-width: 640px) {
+	.oneLevel{
+        font-size: 10px;
+    } 
+}
+
+@media screen and (min-width: 100px) and (max-width: 460px) {
+	.oneLevel{
+        font-size: 8px;
+    }
+}
+

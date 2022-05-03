@@ -1,0 +1,47 @@
+#scale{
+    //font-size: 10px;
+
+	margin: 0.2em 2em 5em 2em;
+    display: block;
+
+    .scale_procent{
+
+        width: 100%;
+        margin: 0.2 0 1em 0;
+
+        span{
+            font-family: 'Poiret One', cursive;
+            font-size: 2.6em;
+            color: #828282;
+            padding-left: 0;
+        }
+    }
+
+    .scale_hr{
+        position: relative;
+
+        hr{
+            border: none;
+            height: 0.8em;
+            margin: 0 0;
+            position: absolute;
+        }
+
+    }
+    
+    .hr_background{
+        width: 100%;
+        background-color: #8ad37120; 
+        top: 0;
+        left: 0;
+    }
+
+    .hr_progress{
+        
+        width: 0%;
+        background-color: #8ad371;
+        top: 0;
+        left: 0;
+    }
+
+}
